@@ -6,8 +6,8 @@ edit_uri: blob/main/docs/
 
 nav:
   - About: index.md 
-
-
+  - Nastava:
+    Programiranje 1: programiranje1.md
 
 # Theme settings
 theme:
@@ -16,7 +16,6 @@ theme:
     scheme: slate
     primary: teal
     accent: teal
-  custom_dir: overrides
   features:
     - header.autohide
     - navigation.instant
