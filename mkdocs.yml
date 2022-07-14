@@ -1,1 +1,9 @@
 site_name: My Docs
+repo_url: https://github.com/DejanLjubobratovic/rechr-website/
+edit_uri: blob/main/docs/
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+    accent: teal
