@@ -7,7 +7,11 @@ edit_uri: blob/main/docs/
 nav:
   - About: index.md
   - Nastava:
-    - Programiranje: nastava/programiranje1.md
+    - Kolegiji:
+      - Programiranje 1: nastava/kolegiji/PROG1.md
+      - Programiranje 2: nastava/kolegiji/PROG2.md
+      - Algoritmi i strukture podataka: nastava/kolegiji/ASP.md
+  - Znanstvena djelatnost:
 
 # Theme settings
 theme:
