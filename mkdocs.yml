@@ -1,7 +1,11 @@
 site_name: RecHr
+site_description: RecHr
+site_author: Dejan Ljubobratović
 repo_url: https://github.com/DejanLjubobratovic/rechr-website/
 edit_uri: blob/main/docs/
 
+nav:
+  - About: 
 
 
 
@@ -12,3 +16,14 @@ theme:
     scheme: slate
     primary: teal
     accent: teal
+  custom_dir: overrides
+  features:
+    - header.autohide
+    - navigation.instant
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tracking
+  logo: images/rec-logo.jpg
+  favicon: images/favicon.png
+  language: hr
