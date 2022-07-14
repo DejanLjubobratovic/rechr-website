@@ -5,7 +5,7 @@ repo_url: https://github.com/DejanLjubobratovic/rechr-website/
 edit_uri: blob/main/docs/
 
 nav:
-  - About: 
+  - About: index.md 
 
 
 
