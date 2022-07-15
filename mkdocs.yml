@@ -27,7 +27,7 @@ theme:
   features:
     - header.autohide # Dodaje "back to top" gumb
     - navigation.instant
-    #- navigation.indexes
+    - navigation.indexes
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
