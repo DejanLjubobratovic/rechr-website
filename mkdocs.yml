@@ -24,11 +24,10 @@ theme:
     scheme: slate
     primary: teal
     accent: teal
-  custom_dir: overrides
   features:
     - header.autohide # Dodaje "back to top" gumb
     - navigation.instant
-    - navigation.indexes
+    #- navigation.indexes
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
