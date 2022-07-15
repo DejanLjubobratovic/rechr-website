@@ -8,13 +8,11 @@ edit_uri: blob/main/docs/
 #Navigation
 nav:
   - About: index.md
-  - Nastava:
-    - Kolegiji: 
-      - About: nastava/kolegiji.md
-      - Dubinska analiza podataka: nastava/kolegiji/DAP.md
-      - Programiranje 1: nastava/kolegiji/PROG1.md
-      - Programiranje 2: nastava/kolegiji/PROG2.md
-      - Algoritmi i strukture podataka: nastava/kolegiji/ASP.md
+  - Nastava: nastava/kolegiji.md
+    - Dubinska analiza podataka: nastava/kolegiji/DAP.md
+    - Programiranje 1: nastava/kolegiji/PROG1.md
+    - Programiranje 2: nastava/kolegiji/PROG2.md
+    - Algoritmi i strukture podataka: nastava/kolegiji/ASP.md
 
 # Theme settings
 theme:
