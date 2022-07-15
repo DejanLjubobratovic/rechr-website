@@ -25,7 +25,7 @@ theme:
     primary: teal
     accent: teal
   features:
-    - header.autohide
+    - header.autohide # Dodaje "back to top" gumb
     - navigation.instant
     - navigation.indexes
     - navigation.sections
