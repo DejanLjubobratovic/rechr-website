@@ -1,9 +1,11 @@
+#General info
 site_name: RecHr
 site_description: RecHr
 site_author: Dejan Ljubobratović
 repo_url: https://github.com/DejanLjubobratovic/rechr-website/
 edit_uri: blob/main/docs/
 
+#Navigation
 nav:
   - About: index.md
   - Nastava:
