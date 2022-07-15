@@ -7,9 +7,10 @@ edit_uri: blob/main/docs/
           
 #Navigation
 nav:
-  - About: index.md
+  - About: 
+    - index.md
   - Nastava: 
-    - O nastavi: nastava/index.md
+    - nastava/index.md
     - Kolegiji:
       - Dubinska analiza podataka: nastava/kolegiji/DAP.md
       - Programiranje 1: nastava/kolegiji/PROG1.md
@@ -29,6 +30,7 @@ theme:
     - navigation.indexes
     - navigation.sections
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.tracking
   logo: images/rec-logo.jpg
   favicon: images/favicon.png
