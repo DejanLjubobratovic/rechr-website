@@ -28,7 +28,7 @@ nav:
 # Plugin settings
 plugins:
   - mkdocs-jupyter
-      kernel_name: R
+      kernel_name: r
 
 # Theme settings
 theme:
