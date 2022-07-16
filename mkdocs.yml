@@ -17,6 +17,10 @@ nav:
       - Programiranje 2: nastava/kolegiji/PROG2.md
       - Algoritmi i strukture podataka: nastava/kolegiji/ASP.md
 
+# Plugin settings
+plugins:
+  - mkdocs-jupyter
+
 # Theme settings
 theme:
   name: material
