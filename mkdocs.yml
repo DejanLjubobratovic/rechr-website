@@ -16,7 +16,7 @@ nav:
       - Programiranje 1: nastava/kolegiji/PROG1.md
       - Programiranje 2: nastava/kolegiji/PROG2.md
       - Algoritmi i strukture podataka: nastava/kolegiji/ASP.md
-      - Inteligentni sustavi 2: docs/nastava/kolegiji/IS2/01_Colab_osnove.ipynb
+      - Inteligentni sustavi 2: nastava/kolegiji/IS2/01_Colab_osnove.ipynb
 
 # Plugin settings
 plugins:
