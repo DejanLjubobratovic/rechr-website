@@ -1,2 +1,2 @@
 ## U ovoj sekciji nalaze se informacije o nastavi
-:computer:
+Ovo je računalo: :computer:
