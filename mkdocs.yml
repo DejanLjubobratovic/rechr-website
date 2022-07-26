@@ -25,8 +25,10 @@ nav:
         - nastava/kolegiji/IS2/06_R_Filtriranje_sort.ipynb
         - nastava/kolegiji/IS2/07_R_Vizualizacija_podataka.ipynb
         - nastava/kolegiji/IS2/08_R_Iris_projekt.ipynb
-      - Informatika (Odjel za biotehnologiju):
+      - Informatika (bioteh):
         - DINP (2022/2023): nastava/kolegiji/INF_bioteh/DINP_INF_bioteh_(22-23).md
+      - Informatika (farmacija):
+        - DINP (2022/2023): nastava/kolegiji/INF_farm/DINP_INF_farm_(22-23).md
 
 # Plugin settings
 plugins:
