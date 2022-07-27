@@ -18,23 +18,24 @@
 
 **Titula i ime:** Dejan Ljubobratović, pred.
 
-**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), ured O-522
+**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-522
 
 **Telefon:** 051/584-724
 
-**E-mail:** dejan.ljubobratovic@uniri.hr
+**E-mail:** dejan.ljubobratovic@inf.uniri.hr
 
+**Web stranica:** [portal.uniri.hr](https://portal.uniri.hr/Portfelj/650)
 
-## Vrijeme konzultacija: 
-Nakon predavanja ili po dogovoru e-mailom.
+## Vrijeme konzultacija
 
-## Izvođači i nastavna opterećenja
+Nakon nastave ili po dogovoru e-mailom.
+
+## Izvođači i nastavna opterećenja (suradnici, asistenti, tehničar/laborant)
 
 Dejan Ljubobratović, pred. (10P + 20V x 2 grupe)
 
 ## Obavezna literatura
 
-1. Sadržaji pripremljeni za učenje putem Merlin sustava za učenje
 1. Špoljarić, Pavle. Programski alati na Unix računalima (zbornik seminarskih radova), Sveučilište u Splitu, Zagreb, 2006.
 1. Sadržaji pripremljeni za učenje putem sustava za učenje uz vlastite bilješke i materijale s predavanja i vježbi.
 
@@ -65,6 +66,7 @@ Po završetku kolegija studenti će moći:
 1. Kategorizirati često korištene licence programske opreme i skupova podataka
 1. Pretražiti baze podataka koje se koriste u računalnoj kemiji, molekularnom modeliranju i bioinformatici
 1. Primijeniti osnovne funkcije operacijskog sustava
+1. Razlikovati numeričko i simboličko računanje te odabrati prikladno za dani problem
 
 ## Detaljni sadržaj kolegija (teme/naslovi predavanja, seminara i vježbi)
 
@@ -73,16 +75,16 @@ Po završetku kolegija studenti će moći:
 P1. (2 h) Povijesni razvoj računala. Sklopovska i programska oprema  
 P2. (2 h) Povijesni razvoj interneta i operacijskih sustava. Znanstvena programska oprema  
 P3. (2 h) Superračunala. Trendovi i smjerovi razvoja informacijske i komunikacijske tehnologije  
-P4. (2 h) Računalna kemija, molekularno modeliranje i bioinformatika  
-P5. (2 h) Intelektualno vlasništvo nad programskom opremom i podacima. Licenciranje  
+P4. (2 h) Intelektualno vlasništvo nad programskom opremom i podacima. Licenciranje  
+P5. (2 h) Računalna kemija, molekularno modeliranje i bioinformatika
 
-### Vježbe (u dvije grupe)
+### Vježbe
 
-V1. (4 h) Rad s osnovnim funkcijama i postavljanje operacijskog sustava. Osnove programiranja.
-V2. (4 h) Obrada dokumenata koji sadrže kemijske molekularne formule i jednadžbe.
-V3. (4 h) Crtanje strukturnih formula i računanje osnovnih svojstava molekula.
-V4. (4 h) Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici.
-V5. (4 h) Numeričko računanje. Obrada strukturiranih podataka.
+V1. (4 h) Obrada dokumenata koji sadrže kemijske molekularne formule i jednadžbe ([Visual Studio Code](https://code.visualstudio.com/), [Live Share](https://code.visualstudio.com/learn/collaboration/live-share), [Markdown](https://commonmark.org/help/), [Marp](https://marp.app/), [MathJax](https://www.mathjax.org/), [KaTeX](https://katex.org/), [mhchem](https://ctan.org/pkg/mhchem), [chemfig](https://ctan.org/pkg/chemfig), [Pandoc](https://pandoc.org/), [LibreOffice](https://www.libreoffice.org/))  
+V2. (4 h) Rad s osnovnim funkcijama i postavljanje operacijskog sustava ([Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install), [Ubuntu](https://ubuntu.com/), [Debian](https://www.debian.org/), [FreeBSD](https://www.freebsd.org/)). Osnove programiranja ([Python](https://www.python.org/), [Visual Studio Code](https://code.visualstudio.com/), [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python))  
+V3. (4 h) Crtanje strukturnih formula i računanje osnovnih svojstava molekula ([RDKit](https://www.rdkit.org/))  
+V4. (4 h) Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici ([KEGG](https://www.genome.jp/kegg/), [ChEMBL](https://www.ebi.ac.uk/chembl/), [RCSB PDB](https://www.rcsb.org/), [UniProt](https://www.uniprot.org/), [GPCRdb](https://gpcrdb.org/), [Avogadro](https://avogadro.cc/), [Open Babel](https://openbabel.org/), [PyMOL](https://pymol.org/), [UGENE](https://ugene.net/))  
+V5. (4 h) Simboličko računanje ([SymPy](https://www.sympy.org/)). Numeričko računanje ([NumPy](https://www.numpy.org/)). Crtanje grafova ([Matplotlib](https://matplotlib.org/)). Obrada strukturiranih podataka ([pandas](https://pandas.pydata.org/))
 
 ## Obveze, način praćenja i vrednovanje studenata
 
@@ -92,29 +94,32 @@ Pohađanje nastave je obavezno i nastavnici vode evidenciju pohađanja za svakog
 
 Predavanja se izvode u bloku od 2 sata prema rasporedu.
 
-Vježbe se izvode na računalima u bloku od 4 sata prema rasporedu podijeljeno u dvije grupe. Na vježbama studenti trebaju usvojiti korištenje računalnih sustava koji se koriste u biotehnologiji.
+Vježbe se izvode na računalima u bloku od 4 sata prema rasporedu. Na vježbama studenti trebaju usvojiti korištenje računarskih sustava koja se koriste u biotehnologiji.
 
-Osim prisustvovanja online nastavi na predavanjima i vježbama studenti su dužni koristiti **e-sustav za učenje Merlin** 
+Osim prisustvovanja online nastavi na predavanjima i vježbama studenti su dužni koristiti **e-sustav za učenje Merlin** ([moodle.srce.hr/2022-2023/](https://moodle.srce.hr/2022-2023/)).
 
+### Aktivnost u nastavi
+
+Odgovaranje na pitanja tematski vezana uz sadržaje održanih predavanja koja će biti postavljena na forumu na Merlinu neposredno nakon održavanja istih nosi do maksimalno 10 ocjenskih bodova.
 
 ### Seminarski rad
 
-Seminarski rad podrazumijeva izradu prezentacije samostalno ili u paru (korištenjem Markdown markup jezika) na odabranu temu iz područja studija o kojoj će se sadržaji prikupiti pretraživanjem weba i izraditi korištenjem programskih alata za računalnu kemiju, molekularno modeliranje i bioinformatiku obrađenih na vježbama. Bodovat će se kvaliteta, sadržaj i aktualnost obrađene teme. Ova aktivnost nosi do maksimalno 20 ocjenskih bodova.
+Seminarski rad podrazumijeva izradu prezentacije samostalno ili u paru korištenjem markup jezika Markdown na odabranu temu iz područja studija o kojoj će se sadržaji prikupiti pretraživanjem weba i izraditi korištenjem programskih alata za računalnu kemiju, molekularno modeliranje i bioinformatiku obrađenih na vježbama. Bodovat će se kvaliteta, sadržaj i aktualnost obrađene teme. Ova aktivnost nosi do maksimalno 20 ocjenskih bodova.
 
 ### Provjera znanja
 
-Provjera znanja iz teorijskog dijela uključuje gradivo obrađeno na predavanjima a izvodi se u obliku testa na sustavu za učenje Merlin, te nosi do maksimalno 30 ocjenskih bodova.
+Provjera znanja uključuje gradivo obrađeno na predavanjima, izvodi se u obliku testa na sustavu za učenje Merlin i nosi do maksimalno 30 ocjenskih bodova.
 
 ### Završni ispit
 
-Završni ispit polaže se na računalima i uključuje rješavanje praktičnih zadataka s vježbi. Ispit nosi udio od maksimalno 50 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
+Završni ispit polaže se na računalima i uključuje rješavanje praktičnih zadataka s vježbi. Ispit nosi udio od maksimalno 50 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% točno odgovorenih pitanja i uspješno riješenih zadataka).
 
-Na prethodno opisani način (provjera teorijskog znanja, seminarski rad i završni ispit) studenti mogu skupiti 100 ocjenskih bodova.
+Na prethodno opisani način (pohađanje nastave, seminarski rad, pisana provjera znanja, završni ispit) studenti mogu skupiti 100 ocjenskih bodova.
 
 ## Ispitni rokovi
 
-1\. ispitni rok održat će se 30.06.2022. u O-365 s početkom u 09:00.  
-2\. ispitni rok održat će se 14.07.2022. u O-365 s početkom u 09:00.  
+1\. ispitni rok održat će se 30. 06. 2023. u O-365 s početkom u 09:00.  
+2\. ispitni rok održat će se 14. 07. 2023. u O-365 s početkom u 09:00.  
 3\. ispitni rok održat će se u rujnu prema dogovoru sa studentima.  
 4\. ispitni rok održat će se u rujnu prema dogovoru sa studentima.
 
@@ -139,24 +144,24 @@ Konačna ocjena je zbroj bodova ostvarenih tijekom nastave i bodova ostvarenih n
 
 ## Raspored nastave
 
-| Datum | Grupa | Vrijeme | Br. sati | Mjesto | Oblik nastave | Izvođač |
+| Datum | Grupa | Vrijeme | Broj sati nastave | Mjesto | Oblik nastave | Izvođač |
 | ----- | ----- | ------- | ----------------- | ------ | ------------- | ------- |
-| 19.06.2023. (pon) | svi | 8:30-10:00 | 2 | S32 | P1 | Dejan Ljubobratović, pred. |
-| 19.06.2023. (pon) | svi | 10:30-12:00 | 2 | S32 | P2 | Dejan Ljubobratović, pred.|
-| 20.06.2023. (uto) | svi | 8:30-10:00  | 2 | S32 | P3 | Dejan Ljubobratović, pred. |
-| 20.06.2023. (uto) | svi | 10:30-12:00 | 2 | S32 | P4 | Dejan Ljubobratović, pred. |
-| 21.06.2023. (sri)| svi | 8:30-10:00  | 2 | S32 | P5 | Dejan Ljubobratović, pred.|
-| 23.06.2023. (pet) | 1 | 8:30-11:30 | 4 | O-365 | V1 + provjera znanja teorija | Dejan Ljubobratović, pred.|
-| 23.06.2023. (pet) | 2 | 12:00-15:00 | 4 | O-365 | V1 + provjera znanja teorija | Dejan Ljubobratović, pred.|
-| 26.06.2023. (pon) | 1 | 8:30-11:30 | 4 | O-365 | V2 | Dejan Ljubobratović, pred.|
-| 26.06.2023. (pon) | 2 | 12:00-15:00 | 4 | O-365 | V2 | Dejan Ljubobratović, pred.|
-| 27.06.2023. (uto) | 1 | 8:30-11:30 | 4 | O-365 | V3 | Dejan Ljubobratović, pred.|
-| 27.06.2023. (uto) | 2 | 12:00-15:00 | 4 | O-365 | V3 | Dejan Ljubobratović, pred.|
-| 28.06.2023. (sri) | 1 | 8:30-11:30 | 4 | O-365 | V4 | Dejan Ljubobratović, pred.|
-| 28.06.2023. (sri) | 2 | 12:00-15:00 | 4 | O-365 | V4 | Dejan Ljubobratović, pred.|
-| 29.06.2023. (čet) | 1 | 8:30-11:30 | 4 | O-365 | V5 | Dejan Ljubobratović, pred.|
-| 29.06.2023. (čet) | 2 | 12:00-15:00 | 4 | O-365 | V5 | Dejan Ljubobratović, pred.|
-| 30.06.2023. (pet) | svi | 9:00-12:00 | 4 | O-365 | Završni ispit 1. rok | Dejan Ljubobratović, pred.|
+| 19. 06. 2021. (ponedjeljak) | svi | 08:30--10:00 | 2 | O-S32 | P1 | Dejan Ljubobratović, pred. |
+| 19. 06. 2021. (ponedjeljak) | svi | 10:30--12:00 | 2 | O-S32 | P2 | Dejan Ljubobratović, pred. |
+| 20. 06. 2021. (utorak) | svi | 8:30--10:00 | 2 | O-S32 | P3 | Dejan Ljubobratović, pred. |
+| 20. 06. 2021. (utorak) | svi | 10:30--12:00 | 2 | O-S32 | P4 | Dejan Ljubobratović, pred. |
+| 21. 06. 2021. (srijeda) | svi | 08:30--10:00 | 2 | O-S32 | P5 | Dejan Ljubobratović, pred. |
+| 23. 06. 2021. (petak) | 1 | 08:30--11:30 | 4 | O-365 | V1 + Provjera znanja | Dejan Ljubobratović, pred. |
+| 23. 06. 2021. (petak) | 2 | 12:00--15:00 | 4 | O-365 | V1 + Provjera znanja | Dejan Ljubobratović, pred. |
+| 26. 06. 2021. (ponedjeljak) | 1 | 08:30--11:30 | 4 | O-365 | V2 | Dejan Ljubobratović, pred. |
+| 26. 06. 2021. (ponedjeljak) | 2 | 12:00--15:00 | 4 | O-365 | V2 | Dejan Ljubobratović, pred. |
+| 27. 06. 2021. (utorak) | 1 | 08:30--11:30 | 4 | O-365 | V3 | Dejan Ljubobratović, pred. |
+| 27. 06. 2021. (utorak) | 2 | 12:00--15:00 | 4 | O-365 | V3 | Dejan Ljubobratović, pred. |
+| 28. 06. 2021. (srijeda) | 1 | 08:30--11:30 | 4 | O-365 | V4 | Dejan Ljubobratović, pred. |
+| 28. 06. 2021. (srijeda) | 2 | 12:00--15:00 | 4 | O-365 | V4 | Dejan Ljubobratović, pred. |
+| 29. 06. 2021. (četvrtak) | 1 | 08:30--11:30 | 4 | O-365 | V5 | Dejan Ljubobratović, pred. |
+| 29. 06. 2021. (četvrtak) | 2 | 12:00--15:00 | 4 | O-365 | V5 | Dejan Ljubobratović, pred. |
+| 30. 06. 2021. (petak) | svi | 09:00--12:00 | 1 test | O-365 | Završni ispit 1. rok | Dejan Ljubobratović, pred. |
 
 ## Dodatne informacije
 
