@@ -1,38 +1,24 @@
 # Detaljni izvedbeni nastavni plan za kolegij: <br />Informatika
+**Akademska godina:** 2022./2023.  
+**Studij:** Preddiplomski studij Biotehnologija i istraživanje lijekova  
+**Kod kolegija:** BIL103  
+**ECTS bodovi:** 3  
+**Jezik na kojem se izvodi kolegij:** Hrvatski  
+**Nastavno opterećenje kolegija:** 30 sati (10P + 20V)  
+**Preduvjeti za upis kolegija:** Nema  
 
-**Akademska godina:** 2022./2023.
+## Nositelj kolegija i kontakt podaci  
+**Titula i ime:** Dejan Ljubobratović, pred.  
+**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-522  
+**Telefon:** 051/584-724  
+**E-mail:** dejan.ljubobratovic@inf.uniri.hr  
+**Web stranica:** [portal.uniri.hr](https://portal.uniri.hr/Portfelj/650)  
 
-**Studij:** Preddiplomski studij Biotehnologija i istraživanje lijekova
-
-**Kod kolegija:** BIL103
-
-**ECTS bodovi:** 3
-
-**Jezik na kojem se izvodi kolegij:** Hrvatski
-
-**Nastavno opterećenje kolegija:** 30 sati (10P + 20V)
-
-**Preduvjeti za upis kolegija:** Nema
-
-## Nositelj kolegija i kontakt podaci
-
-**Titula i ime:** Dejan Ljubobratović, pred.
-
-**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-522
-
-**Telefon:** 051/584-724
-
-**E-mail:** dejan.ljubobratovic@inf.uniri.hr
-
-**Web stranica:** [portal.uniri.hr](https://portal.uniri.hr/Portfelj/650)
-
-## Vrijeme konzultacija
-
-Nakon nastave ili po dogovoru e-mailom.
+## Vrijeme konzultacija  
+Nakon nastave ili po dogovoru e-mailom.  
 
 ## Izvođači i nastavna opterećenja (suradnici, asistenti, tehničar/laborant)
-
-Dejan Ljubobratović, pred. (10P + 20V x 2 grupe)
+Dejan Ljubobratović, pred. (10P + 20V x 2 grupe)  
 
 ## Obavezna literatura
 
