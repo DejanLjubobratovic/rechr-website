@@ -1,4 +1,4 @@
-# Detaljni izvedbeni nastavni plan za kolegij: INFORMATIKA
+# Detaljni izvedbeni nastavni plan za kolegij: <br />Informatika
 
 **Akademska godina:** 2022./2023.
 
