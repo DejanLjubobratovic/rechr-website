@@ -1,6 +1,5 @@
-Informatika za farmaceute
+## Detaljni izvedbeni nastavni plan za kolegij: <br />Informatika za farmaceute
 
-## DETALJNI IZVEDBENI NASTAVNI PLAN
 
 **Godina studija: 2. godina**  
 
