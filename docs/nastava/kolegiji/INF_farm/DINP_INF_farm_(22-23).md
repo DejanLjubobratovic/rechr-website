@@ -1,16 +1,16 @@
-# Detaljni izvedbeni nastavni plan za kolegij: <br />Informatika za farmaceute
+# Detaljni izvedbeni nastavni plan za kolegij: <br />Informatika za farmaceute  
 **Godina studija: 2. godina**  
-**Akademska godina:** 2022./2023.
-**Studij:** Integrirani preddiplomski i diplomski sveučilišni studij Farmacija
-**Jezik na kojem se izvodi kolegij:** Hrvatski
-**Nastavno opterećenje kolegija:** 30 sati (10P + 10V + 10S)
+**Akademska godina:** 2022./2023.  
+**Studij:** Integrirani preddiplomski i diplomski sveučilišni studij Farmacija  
+**Jezik na kojem se izvodi kolegij:** Hrvatski  
+**Nastavno opterećenje kolegija:** 45 sati (15P + 15V + 5S)  
 
 ## Nositelj kolegija i kontakt podaci
-**Titula i ime:** Dejan Ljubobratović, pred.
-**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-522
-**Telefon:** 051/584-724
-**E-mail:** dejan.ljubobratovic@uniri.hr
-**Web stranica:** [portal.uniri.hr](https://portal.uniri.hr/Portfelj/650)
+**Titula i ime:** Dejan Ljubobratović, pred.  
+**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-522  
+**Telefon:** 051/584-724  
+**E-mail:** dejan.ljubobratovic@uniri.hr  
+**Web stranica:** [portal.uniri.hr](https://portal.uniri.hr/Portfelj/650)  
 
 ## Vrijeme konzultacija
 Nakon nastave ili po dogovoru e-mailom.
