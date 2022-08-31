@@ -1,5 +1,5 @@
 # Detaljni izvedbeni nastavni plan za kolegij: <br />Informatika za farmaceute  
-**Godina studija: 2. godina**  
+**Godina studija:** 2. godina  
 **Akademska godina:** 2022./2023.  
 **Studij:** Integrirani preddiplomski i diplomski sveučilišni studij Farmacija  
 **Jezik na kojem se izvodi kolegij:** Hrvatski  
