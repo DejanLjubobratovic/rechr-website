@@ -3,11 +3,13 @@
 **Akademska godina:** 2022./2023.  
 **Studij:** Integrirani preddiplomski i diplomski sveučilišni studij Farmacija  
 **Jezik na kojem se izvodi kolegij:** Hrvatski  
-**Nastavno opterećenje kolegija:** 45 sati (15P + 15V + 5S)  
+**Nastavno opterećenje kolegija:** 45 sati (15P + 15V + 15S)  
 
-## Nositelj kolegija i kontakt podaci
-**Titula i ime:** Dejan Ljubobratović, pred.  
-**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-522  
+## Nositelj kolegija
+**Nositelj kolegija:** doc. dr. sc. Vedran Miletić  
+## Izvođač kolegija i kontakt podaci
+**Izvođač:** Dejan Ljubobratović, pred.  
+**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-416  
 **Telefon:** 051/584-724  
 **E-mail:** dejan.ljubobratovic@uniri.hr  
 **Web stranica:** [portal.uniri.hr](https://portal.uniri.hr/Portfelj/650)  
