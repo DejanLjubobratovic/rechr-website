@@ -160,15 +160,6 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 | P5 | Računalna kemija, molekularno modeliranje i bioinformatika | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
 |    | **Ukupan broj sati predavanja** | **15** | |
 
-|    | SEMINARI (tema seminara) | Broj sati nastave | Mjesto održavanja |
-| -- | ---------------------------- | ----------------- | ----------------- |
-| S1 | Predviđanje pristajanja molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| S2 | Molekularna dinamika. Slobodna energija | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| S3 | Kvantitativna analiza odnosa strukture i aktivnosti molekule | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| S4 | Metode kvantne kemije | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| S5 | Pretraživanje i poravnanje sekvenci | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-|    | **Ukupan broj sati seminara** | **15** | |
-
 |    | VJEŽBE (tema vježbe) | Broj sati nastave | Mjesto održavanja |
 | -- | ---------------------------- | ----------------- | ----------------- |
 | V1 | Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
@@ -177,6 +168,15 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 | V4 | Obrada strukturiranih podataka. Crtanje grafova | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
 | V5 | Rad s osnovnim funkcijama i postavljanje operacijskog sustava | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
 |    | **Ukupan broj sati vježbi** | **15** | |
+
+|    | SEMINARI (tema seminara) | Broj sati nastave | Mjesto održavanja |
+| -- | ---------------------------- | ----------------- | ----------------- |
+| S1 | Predviđanje pristajanja molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S2 | Molekularna dinamika. Slobodna energija | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S3 | Kvantitativna analiza odnosa strukture i aktivnosti molekule | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S4 | Metode kvantne kemije | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S5 | Pretraživanje i poravnanje sekvenci | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+|    | **Ukupan broj sati seminara** | **15** | |
 
 |     | ISPITNI TERMINI (završni ispit) |
 | --- | ------------------------------- |
