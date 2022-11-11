@@ -31,7 +31,7 @@ nav:
         - DINP (2022/2023): nastava/kolegiji/INF_farm/DINP_INF_farm_(22-23).md
   - Nastava: 
     - radovi/index.md
-      - INFcon 2022: radovi/infcon22.md
+    - INFcon 2022: radovi/infcon22.md
 
 # Plugin settings
 plugins:
