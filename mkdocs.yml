@@ -1,4 +1,4 @@
-#General info
+p#General info
 site_name: RecHr
 site_description: RecHr
 site_author: Dejan Ljubobratović
@@ -16,6 +16,14 @@ nav:
       - Programiranje 1: nastava/kolegiji/PROG1.md
       - Programiranje 2: nastava/kolegiji/PROG2.md
       - Algoritmi i strukture podataka: nastava/kolegiji/ASP.md
+      - Programiranje za podatkovnu znanost:
+        - nastava/kolegiji/PPZ/02_R_osnove.ipynb
+        - nastava/kolegiji/PPZ/03_R_Matrice.ipynb
+        - nastava/kolegiji/PPZ/04_R_Faktori.ipynb
+        - nastava/kolegiji/PPZ/05_R_DataFrame.ipynb
+        - nastava/kolegiji/PPZ/06_R_Filtriranje_sort.ipynb
+        - nastava/kolegiji/PPZ/07_R_Vizualizacija_podataka.ipynb
+        - nastava/kolegiji/PPZ/08_R_Iris_projekt.ipynb
       - Inteligentni sustavi 2: 
         - nastava/kolegiji/IS2/01_Colab_osnove.ipynb
         - nastava/kolegiji/IS2/02_R_osnove.ipynb
