@@ -14,11 +14,12 @@ nav:
     - Kolegiji:
       - Dubinska analiza podataka: nastava/kolegiji/DAP.md
       - Programiranje za podatkovnu znanost:
-        - nastava/kolegiji/PPZ/01_R_osnove.ipynb
-        - nastava/kolegiji/PPZ/02_R_Vektori.ipynb
-        - nastava/kolegiji/PPZ/03_R_Matrice.ipynb
-        - nastava/kolegiji/PPZ/04_R_Faktori.ipynb
-        - nastava/kolegiji/PPZ/05_R_DataFrame.ipynb
+        - nastava/kolegiji/PPZ/00_R_osnove.ipynb
+        - nastava/kolegiji/PPZ/01_R_Vektori.ipynb
+        - nastava/kolegiji/PPZ/02_R_Matrice.ipynb
+        - nastava/kolegiji/PPZ/03_R_Faktori.ipynb
+        - nastava/kolegiji/PPZ/04_R_DataFrame.ipynb
+        - nastava/kolegiji/PPZ/05_R_Liste.ipynb
         - nastava/kolegiji/PPZ/06_R_Filtriranje_sort.ipynb
         - nastava/kolegiji/PPZ/07_R_Vizualizacija_podataka.ipynb
       - Informatika (bioteh):
