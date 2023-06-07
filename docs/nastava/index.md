@@ -1,2 +1,2 @@
-## U ovoj sekciji nalaze se informacije o nastavi
+## U ovoj sekciji nalaze se sve informacije o nastavi
 :computer:
