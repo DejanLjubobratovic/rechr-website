@@ -84,10 +84,6 @@ Vježbe se izvode na računalima u bloku od 4 sata prema rasporedu. Na vježbama
 
 Osim prisustvovanja online nastavi na predavanjima i vježbama studenti su dužni koristiti **e-sustav za učenje Merlin** ([moodle.srce.hr/2022-2023/](https://moodle.srce.hr/2022-2023/)).
 
-### Aktivnost u nastavi
-
-Odgovaranje na pitanja tematski vezana uz sadržaje održanih predavanja koja će biti postavljena na forumu na Merlinu neposredno nakon održavanja istih nosi do maksimalno 10 ocjenskih bodova.
-
 ### Seminarski rad
 
 Seminarski rad podrazumijeva izradu prezentacije samostalno ili u paru korištenjem markup jezika Markdown na odabranu temu iz područja studija o kojoj će se sadržaji prikupiti pretraživanjem weba i izraditi korištenjem programskih alata za računalnu kemiju, molekularno modeliranje i bioinformatiku obrađenih na vježbama. Bodovat će se kvaliteta, sadržaj i aktualnost obrađene teme. Ova aktivnost nosi do maksimalno 20 ocjenskih bodova.
