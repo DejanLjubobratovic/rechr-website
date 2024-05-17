@@ -1,0 +1,598 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOGwrz+ocey4ufkZSYGXxT/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "ir",
+      "display_name": "R"
+    },
+    "language_info": {
+      "name": "R"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/DejanLjubobratovic/rechr-website/blob/main/docs/nastava/kolegiji/PPZ/_07_R_Funkcije.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 7. Funkcije sustava R\n",
+        "Funkcija je skupina izraza koja izvršava neki zadatak.  \n",
+        "Osnovna sintaksa svake funkcije je:\n",
+        "```\n",
+        "ime_funkcije <- function(argument1, argument2, ...){\n",
+        "izraz1\n",
+        "izraz2\n",
+        "...\n",
+        "}\n",
+        "```\n",
+        "Svaka funkcija ima svoj **naziv** po kojem se poziva.  \n",
+        "**Argumenti** su ulazni podaci koji trebaju funkciji da izvrši neki zadatak.  \n",
+        "Funkcija može, a i ne mora imati argumente, i argumenti mogu imati unaprijed zadane vrijednosti.\n"
+      ],
+      "metadata": {
+        "id": "ER36ohspXgNu"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Funkcije iz grupe _**apply**_\n",
+        "Funkcije iz obitelji _**apply**_ alternativna su rješenja za petlje, odnosno mehanizam koji koristimo umjesto višestrukog izvršavanja istoga programskog kôda.  \n",
+        "Koristit ćemo:  \n",
+        "*   `apply()`\n",
+        "*   `lapply()` \n",
+        "*   `sapply()`  \n",
+        "*   `tapply()`  \n",
+        "*   te dodatnu funkciju `aggregate()`\n",
+        "\n",
+        "<br>\n",
+        "\n",
+        "## Funkcija _**apply()**_\n",
+        "Izgled funkcije:  \n",
+        "_**apply(X, MARGIN, FUNC)**_ gdje je:\n",
+        "* X matrica\n",
+        "* MARGIN oznaka da li se radi o retku ili stupcu (**1** za retke, **2** za stupce)\n",
+        "* FUNC funkcija koja će se primijenjivati na retke ili stupce (MARGIN) matrice X.\n",
+        "\n",
+        "<br>\n",
+        "\n",
+        "_**Primjer**_  \n",
+        "Kreirajmo matricu koja sadrži sve parne brojeve manje od 20, dimenzija 3x3.  \n",
+        "Supcima dajte imena A, B i C, a redcima I, II i III.\n",
+        "Izračunajte prosjeke svih stupaca ove matrice i dodajte ih kao posljednji redak naziva \"IV\" u tu matricu.  \n",
+        "Zatim izračunajte zbrojeve redaka i dodajte ih kao posljednji supac ove matrice, naziva \"D\".  \n",
+        "Rješenje treba izgledati ovako:  \n",
+        "\n",
+        "||A|B|C|D|\n",
+        "|---|---|---|---|---|\n",
+        "|**I**|2|8|14|24|\n",
+        "|**II**|4|10|16|30|\n",
+        "|**III**|6|12|18|36|\n",
+        "|**IV**|4|10|16|30|"
+      ],
+      "metadata": {
+        "id": "p5WppMC_X07Y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 18,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 209
+        },
+        "id": "2auEUkQsWy8S",
+        "outputId": "2de1647d-655a-4fbe-ee48-67c2cead4a33"
+      },
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<table class=\"dataframe\">\n",
+              "<caption>A matrix: 4 × 4 of type dbl</caption>\n",
+              "<thead>\n",
+              "\t<tr><th></th><th scope=col>A</th><th scope=col>B</th><th scope=col>C</th><th scope=col>D</th></tr>\n",
+              "</thead>\n",
+              "<tbody>\n",
+              "\t<tr><th scope=row>I</th><td>2</td><td> 8</td><td>14</td><td>24</td></tr>\n",
+              "\t<tr><th scope=row>II</th><td>4</td><td>10</td><td>16</td><td>30</td></tr>\n",
+              "\t<tr><th scope=row>III</th><td>6</td><td>12</td><td>18</td><td>36</td></tr>\n",
+              "\t<tr><th scope=row>IV</th><td>4</td><td>10</td><td>16</td><td>30</td></tr>\n",
+              "</tbody>\n",
+              "</table>\n"
+            ],
+            "text/markdown": "\nA matrix: 4 × 4 of type dbl\n\n| <!--/--> | A | B | C | D |\n|---|---|---|---|---|\n| I | 2 |  8 | 14 | 24 |\n| II | 4 | 10 | 16 | 30 |\n| III | 6 | 12 | 18 | 36 |\n| IV | 4 | 10 | 16 | 30 |\n\n",
+            "text/latex": "A matrix: 4 × 4 of type dbl\n\\begin{tabular}{r|llll}\n  & A & B & C & D\\\\\n\\hline\n\tI & 2 &  8 & 14 & 24\\\\\n\tII & 4 & 10 & 16 & 30\\\\\n\tIII & 6 & 12 & 18 & 36\\\\\n\tIV & 4 & 10 & 16 & 30\\\\\n\\end{tabular}\n",
+            "text/plain": [
+              "    A B  C  D \n",
+              "I   2  8 14 24\n",
+              "II  4 10 16 30\n",
+              "III 6 12 18 36\n",
+              "IV  4 10 16 30"
+            ]
+          },
+          "metadata": {}
+        }
+      ],
+      "source": [
+        "matrica <- matrix(2*c(1:9), 3, 3)\n",
+        "colnames(matrica)=c(\"A\", \"B\", \"C\")\n",
+        "rownames(matrica)=c(\"I\", \"II\", \"III\")\n",
+        "IV <- apply(matrica, 2, mean)\n",
+        "matrica <- rbind(matrica, IV)\n",
+        "D <- apply(matrica, 1, sum)\n",
+        "matrica <- cbind(matrica, D)\n",
+        "matrica"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Funkcija _**lapply()**_\n",
+        "Funkcija _**lapply()**_ je proširenje funkcije _**apply()**_ koje se može primijeniti i na podatkovne okvire (data frames) i liste, a rezultat se vraća isključivo u obliku liste (odakle dolazi i _**L**_ u nazivu funkcije).  \n",
+        "\n",
+        "Izgled funkcije:  \n",
+        "_**lapply(X, FUNC, . . .)**_ gdje je:  \n",
+        "* X vektor ili lista, a sve ostalo će biti automatski pretvoreno u listu\n",
+        "* FUNC funkcija koja će se primijenjivati nad X\n",
+        "* . . . dodatne opcije funkcije FUNC\n",
+        "\n",
+        "<br>\n",
+        "\n",
+        "_**Primjer**_  \n",
+        "Kreirajte podatkovni okvir _**studenti**_ s imenima studenata, njihovim visinama i njihovom starosti:  \n",
+        "* ime: Ana, Ivan, Marko, Petra\n",
+        "* dob: 27, 32, 21, 24\n",
+        "* visina: 1.63, 1.82, 1.70, 1.68  \n",
+        "\n",
+        "Primjenite funkciju `mean` pomoću `lapply()` na dob i visinu da bi izračunali prosječnu visinu i dob."
+      ],
+      "metadata": {
+        "id": "66pdI-tZhV5U"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "studenti <- data.frame(\n",
+        "  ime = c(\"Ana\", \"Ivan\", \"Marko\", \"Petra\"),\n",
+        "  dob = c(27, 32, 21, 24),\n",
+        "  visina = c(1.63, 1.82, 1.70, 1.68)\n",
+        ")\n",
+        "lapply(studenti[,2:3], mean)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 114
+        },
+        "id": "Le0965kH6D9W",
+        "outputId": "70024dd0-0c41-4b30-ca1b-3e144b3d3768"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<dl>\n",
+              "\t<dt>$dob</dt>\n",
+              "\t\t<dd>26</dd>\n",
+              "\t<dt>$visina</dt>\n",
+              "\t\t<dd>1.7075</dd>\n",
+              "</dl>\n"
+            ],
+            "text/markdown": "$dob\n:   26\n$visina\n:   1.7075\n\n\n",
+            "text/latex": "\\begin{description}\n\\item[\\$dob] 26\n\\item[\\$visina] 1.7075\n\\end{description}\n",
+            "text/plain": [
+              "$dob\n",
+              "[1] 26\n",
+              "\n",
+              "$visina\n",
+              "[1] 1.7075\n"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "_**Zadatak**_  \n",
+        "Kreirajte podatkovni okvir _**auti**_ od ova četiri vektora s njihovim pripadnim vrijednostima:  \n",
+        "* _**proizvođač**_: Ford, Toyota, Chevrolet  \n",
+        "* _**model**_: Mustang, Corolla, Camaro  \n",
+        "* _**godište**_: 2010, 2015, 2012  \n",
+        "* _**cijena**_: 12000, 15000, 18000  \n",
+        "1. Kreirajte podatkovni okvir _**auti2**_ koji će sadržavati sve podatke iz podatkovnog okvira _**auti**_ u tekstualnom obliku (koristiti: `as.character`)\n",
+        "2. Kreirajte podatkovni okvir _**auti3**_ koji će sve tekstualne podatke iz podatkovnog okvira _**auti**_ pretvoriti u velika slova (koristiti: `toupper`)"
+      ],
+      "metadata": {
+        "id": "hXIo8QKb45nI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "auti <- data.frame(\n",
+        "  proizvođač = c(\"Ford\", \"Toyota\", \"Chevrolet\"),\n",
+        "  model = c(\"Mustang\", \"Corolla\", \"Camaro\"),\n",
+        "  godište = c(2010, 2015, 2012),\n",
+        "  cijena = c(12000, 15000, 18000))\n",
+        "lapply(auti, as.character)\n",
+        "lapply(auti, function(x) if (is.character(x)) toupper(x) else x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 337
+        },
+        "id": "-g3zma5NvFw_",
+        "outputId": "509ad3fa-b71e-454c-a0aa-3040907981cd"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<dl>\n",
+              "\t<dt>$proizvođač</dt>\n",
+              "\t\t<dd><style>\n",
+              ".list-inline {list-style: none; margin:0; padding: 0}\n",
+              ".list-inline>li {display: inline-block}\n",
+              ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+              "</style>\n",
+              "<ol class=list-inline><li>'Ford'</li><li>'Toyota'</li><li>'Chevrolet'</li></ol>\n",
+              "</dd>\n",
+              "\t<dt>$model</dt>\n",
+              "\t\t<dd><style>\n",
+              ".list-inline {list-style: none; margin:0; padding: 0}\n",
+              ".list-inline>li {display: inline-block}\n",
+              ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+              "</style>\n",
+              "<ol class=list-inline><li>'Mustang'</li><li>'Corolla'</li><li>'Camaro'</li></ol>\n",
+              "</dd>\n",
+              "\t<dt>$godište</dt>\n",
+              "\t\t<dd><style>\n",
+              ".list-inline {list-style: none; margin:0; padding: 0}\n",
+              ".list-inline>li {display: inline-block}\n",
+              ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+              "</style>\n",
+              "<ol class=list-inline><li>'2010'</li><li>'2015'</li><li>'2012'</li></ol>\n",
+              "</dd>\n",
+              "\t<dt>$cijena</dt>\n",
+              "\t\t<dd><style>\n",
+              ".list-inline {list-style: none; margin:0; padding: 0}\n",
+              ".list-inline>li {display: inline-block}\n",
+              ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+              "</style>\n",
+              "<ol class=list-inline><li>'12000'</li><li>'15000'</li><li>'18000'</li></ol>\n",
+              "</dd>\n",
+              "</dl>\n"
+            ],
+            "text/markdown": "$proizvođač\n:   1. 'Ford'\n2. 'Toyota'\n3. 'Chevrolet'\n\n\n\n$model\n:   1. 'Mustang'\n2. 'Corolla'\n3. 'Camaro'\n\n\n\n$godište\n:   1. '2010'\n2. '2015'\n3. '2012'\n\n\n\n$cijena\n:   1. '12000'\n2. '15000'\n3. '18000'\n\n\n\n\n\n",
+            "text/latex": "\\begin{description}\n\\item[\\$proizvođač] \\begin{enumerate*}\n\\item 'Ford'\n\\item 'Toyota'\n\\item 'Chevrolet'\n\\end{enumerate*}\n\n\\item[\\$model] \\begin{enumerate*}\n\\item 'Mustang'\n\\item 'Corolla'\n\\item 'Camaro'\n\\end{enumerate*}\n\n\\item[\\$godište] \\begin{enumerate*}\n\\item '2010'\n\\item '2015'\n\\item '2012'\n\\end{enumerate*}\n\n\\item[\\$cijena] \\begin{enumerate*}\n\\item '12000'\n\\item '15000'\n\\item '18000'\n\\end{enumerate*}\n\n\\end{description}\n",
+            "text/plain": [
+              "$proizvođač\n",
+              "[1] \"Ford\"      \"Toyota\"    \"Chevrolet\"\n",
+              "\n",
+              "$model\n",
+              "[1] \"Mustang\" \"Corolla\" \"Camaro\" \n",
+              "\n",
+              "$godište\n",
+              "[1] \"2010\" \"2015\" \"2012\"\n",
+              "\n",
+              "$cijena\n",
+              "[1] \"12000\" \"15000\" \"18000\"\n"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<dl>\n",
+              "\t<dt>$proizvođač</dt>\n",
+              "\t\t<dd><style>\n",
+              ".list-inline {list-style: none; margin:0; padding: 0}\n",
+              ".list-inline>li {display: inline-block}\n",
+              ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+              "</style>\n",
+              "<ol class=list-inline><li>'FORD'</li><li>'TOYOTA'</li><li>'CHEVROLET'</li></ol>\n",
+              "</dd>\n",
+              "\t<dt>$model</dt>\n",
+              "\t\t<dd><style>\n",
+              ".list-inline {list-style: none; margin:0; padding: 0}\n",
+              ".list-inline>li {display: inline-block}\n",
+              ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+              "</style>\n",
+              "<ol class=list-inline><li>'MUSTANG'</li><li>'COROLLA'</li><li>'CAMARO'</li></ol>\n",
+              "</dd>\n",
+              "\t<dt>$godište</dt>\n",
+              "\t\t<dd><style>\n",
+              ".list-inline {list-style: none; margin:0; padding: 0}\n",
+              ".list-inline>li {display: inline-block}\n",
+              ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+              "</style>\n",
+              "<ol class=list-inline><li>2010</li><li>2015</li><li>2012</li></ol>\n",
+              "</dd>\n",
+              "\t<dt>$cijena</dt>\n",
+              "\t\t<dd><style>\n",
+              ".list-inline {list-style: none; margin:0; padding: 0}\n",
+              ".list-inline>li {display: inline-block}\n",
+              ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+              "</style>\n",
+              "<ol class=list-inline><li>12000</li><li>15000</li><li>18000</li></ol>\n",
+              "</dd>\n",
+              "</dl>\n"
+            ],
+            "text/markdown": "$proizvođač\n:   1. 'FORD'\n2. 'TOYOTA'\n3. 'CHEVROLET'\n\n\n\n$model\n:   1. 'MUSTANG'\n2. 'COROLLA'\n3. 'CAMARO'\n\n\n\n$godište\n:   1. 2010\n2. 2015\n3. 2012\n\n\n\n$cijena\n:   1. 12000\n2. 15000\n3. 18000\n\n\n\n\n\n",
+            "text/latex": "\\begin{description}\n\\item[\\$proizvođač] \\begin{enumerate*}\n\\item 'FORD'\n\\item 'TOYOTA'\n\\item 'CHEVROLET'\n\\end{enumerate*}\n\n\\item[\\$model] \\begin{enumerate*}\n\\item 'MUSTANG'\n\\item 'COROLLA'\n\\item 'CAMARO'\n\\end{enumerate*}\n\n\\item[\\$godište] \\begin{enumerate*}\n\\item 2010\n\\item 2015\n\\item 2012\n\\end{enumerate*}\n\n\\item[\\$cijena] \\begin{enumerate*}\n\\item 12000\n\\item 15000\n\\item 18000\n\\end{enumerate*}\n\n\\end{description}\n",
+            "text/plain": [
+              "$proizvođač\n",
+              "[1] \"FORD\"      \"TOYOTA\"    \"CHEVROLET\"\n",
+              "\n",
+              "$model\n",
+              "[1] \"MUSTANG\" \"COROLLA\" \"CAMARO\" \n",
+              "\n",
+              "$godište\n",
+              "[1] 2010 2015 2012\n",
+              "\n",
+              "$cijena\n",
+              "[1] 12000 15000 18000\n"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Funkcija _**sapply()**_\n",
+        "Funkcija _**sapply()**_ radi isto što i _**lapply()**_, osim što za rezultat vraća najjednostavniju moguću strukturu podataka.  \n",
+        "Na primjer, ako je moguće umjesto liste vratiti odgovor u obliku vektora, _**sapply()**_ će to i napraviti (_**s**_ u nazivu dolazi od simplify) \n",
+        "\n",
+        "<br>\n",
+        "\n",
+        "_**Primjer**_  \n",
+        "Kreirajte podatkovni okvir _**ljudi**_ koji sadrži informacije o četiri osobe sa sljedećim vrijednostima:  \n",
+        "* _**imena**_: Ana, Boris, Branka, Dario  \n",
+        "* _**dob**_: 24, 32, 45, 19  \n",
+        "* _**spol**_: \"ženski\", \"muški\", \"ženski\", \"muški\"  \n",
+        "\n",
+        "Zatim primijenite funkciju _**sapply()**_ na stupcu _**dob**_ kako bi dobili dvostruke vrijednosti dobi svake osobe.  \n",
+        "Rezultat spremite u varijablu _**godine**_ i ispišite ju na način:  \n",
+        "`Varijabla 'godine' ima vrijednosti:  48 64 90 38`  \n",
+        "Ispišite tip podatka za varijablu _**godine**_ da bude oblika:  \n",
+        "`Varijabla 'godine' je tipa:  numeric`  \n",
+        "Ponovite postupak koristeći funkciju _**lapply()**_ opet ispišite vrijednosti i tip varijable."
+      ],
+      "metadata": {
+        "id": "Ih2Di2Ncftri"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ljudi <- data.frame(\n",
+        "  ime = c(\"Ana\", \"Boris\", \"Branka\", \"Dario\"),\n",
+        "  dob = c(24, 32, 45, 19),\n",
+        "  spol = c(\"ženski\", \"muški\", \"ženski\", \"muški\")\n",
+        ")\n",
+        "print(ljudi)\n",
+        "\n",
+        "godine <- sapply(ljudi$dob, function(x) x*2)\n",
+        "cat(\"\\nVarijabla 'godine' ima vrijednosti: \", godine)\n",
+        "cat(\"\\nVarijabla 'godine' je tipa: \",class(godine))\n",
+        "\n",
+        "godine2 <- lapply(ljudi$dob, function(x) x*2)\n",
+        "godine2\n",
+        "cat(\"\\nVarijabla 'godine2' je tipa: \",class(godine2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 288
+        },
+        "id": "O9nH7Ueyh6pn",
+        "outputId": "1e7d088a-2d29-4ed9-9399-29e1a9d65296"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "     ime dob   spol\n",
+            "1    Ana  24 ženski\n",
+            "2  Boris  32  muški\n",
+            "3 Branka  45 ženski\n",
+            "4  Dario  19  muški\n",
+            "\n",
+            "Varijabla 'godine' ima vrijednosti:  48 64 90 38\n",
+            "Varijabla 'godine' je tipa:  numeric"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<ol>\n",
+              "\t<li>48</li>\n",
+              "\t<li>64</li>\n",
+              "\t<li>90</li>\n",
+              "\t<li>38</li>\n",
+              "</ol>\n"
+            ],
+            "text/markdown": "1. 48\n2. 64\n3. 90\n4. 38\n\n\n",
+            "text/latex": "\\begin{enumerate}\n\\item 48\n\\item 64\n\\item 90\n\\item 38\n\\end{enumerate}\n",
+            "text/plain": [
+              "[[1]]\n",
+              "[1] 48\n",
+              "\n",
+              "[[2]]\n",
+              "[1] 64\n",
+              "\n",
+              "[[3]]\n",
+              "[1] 90\n",
+              "\n",
+              "[[4]]\n",
+              "[1] 38\n"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Varijabla 'godine2' je tipa:  list"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Funkcije _**tapply()**_ i _**aggregate**_ \n",
+        "Funkcija _**tapply()**_ dijeli podatkovni skup u kategorije, te za svaku kategoriju izračuna traženu funkciju.  \n",
+        "Analiza podataka često zahtjeva računanje ili uspoređivanje svojstava prema podgrupama nekoga skupa podataka, na primjer, da se podaci podijele po spolu, državi, gradu, razredu, itd., i to često dovodi do zanimljivih otkrića.  \n",
+        "Izgled funkcije:  \n",
+        "_**tapply(X, INDEX, FUNC = NULL)**_ gdje je:  \n",
+        "* X - podatkovni skup, po mogućnosti vektor, za koji je moguće napraviti podjelu po kategorijama\n",
+        "* INDEX - lista elemenata po kojoj se određuju kategorije\n",
+        "* FUNC - funkcija koja se primijenjuje na svaku podgrupu\n",
+        "\n",
+        "<br>\n",
+        "\n",
+        "_**Primjer**_  \n",
+        "Funkcija _**tapply()**_ primjenjuje funkciju na vrijednosti podataka grupiranih prema drugom vektoru.  \n",
+        "Kreirajte podatkovni okvir _**studenti**_ s imenima studenata, njihovim visinama i njihovom dobi kako je navedeno:  \n",
+        "* ime: Ana, Ivan, Marko, Petra\n",
+        "* dob = 21, 24, 21, 24\n",
+        "* visina = 1.63, 1.82, 1.70, 1.68  \n",
+        "\n",
+        "Koristeći funkciju _**tapply()**_ izračunajte prosječnu visinu za svaku dob iz podatkovnog okvira."
+      ],
+      "metadata": {
+        "id": "cwNRugkLBtiB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "studenti <- data.frame(\n",
+        "  ime = c(\"Ana\", \"Ivan\", \"Marko\", \"Petra\"),\n",
+        "  dob = c(21, 24, 21, 24),\n",
+        "  visina = c(1.63, 1.82, 1.70, 1.68)\n",
+        ")\n",
+        "prosjek_po_godinama <- tapply(studenti$visina, studenti$dob, mean)\n",
+        "cat(\"\\nProsjek visina za gledano po dobi studenta:\\n\")\n",
+        "print(prosjek_po_godinama)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qQ6o1AMHFsVf",
+        "outputId": "088af4ec-db92-4cb2-bd25-420288024b57"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Prosjek visina za gledano po dobi studenta:\n",
+            "   21    24 \n",
+            "1.665 1.750 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Sličan rezultat bi dobili i funkcijom _**aggregate**_.\n",
+        "Tako bi za uneseni podatkovni okvir _**studenti**_ prosjek visina gledano po dobi studenta mogli izračunati ovako:"
+      ],
+      "metadata": {
+        "id": "RwQTuLNgIbEf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cat(\"\\nProsjek visina za gledano po dobi studenta:\\n\")\n",
+        "aggregate(studenti$visina, list(Godine = studenti$dob), mean)\n"
+      ],
+      "metadata": {
+        "id": "fB4uCcCzImhk",
+        "outputId": "47c083a3-ebfd-49fb-f71e-a504819fd7a0",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 213
+        }
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Prosjek visina za gledano po dobi studenta:\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<table class=\"dataframe\">\n",
+              "<caption>A data.frame: 2 × 2</caption>\n",
+              "<thead>\n",
+              "\t<tr><th scope=col>Godine</th><th scope=col>x</th></tr>\n",
+              "\t<tr><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>\n",
+              "</thead>\n",
+              "<tbody>\n",
+              "\t<tr><td>21</td><td>1.665</td></tr>\n",
+              "\t<tr><td>24</td><td>1.750</td></tr>\n",
+              "</tbody>\n",
+              "</table>\n"
+            ],
+            "text/markdown": "\nA data.frame: 2 × 2\n\n| Godine &lt;dbl&gt; | x &lt;dbl&gt; |\n|---|---|\n| 21 | 1.665 |\n| 24 | 1.750 |\n\n",
+            "text/latex": "A data.frame: 2 × 2\n\\begin{tabular}{ll}\n Godine & x\\\\\n <dbl> & <dbl>\\\\\n\\hline\n\t 21 & 1.665\\\\\n\t 24 & 1.750\\\\\n\\end{tabular}\n",
+            "text/plain": [
+              "  Godine x    \n",
+              "1 21     1.665\n",
+              "2 24     1.750"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
