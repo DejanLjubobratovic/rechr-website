@@ -1,0 +1,1794 @@
+
+<!doctype html>
+<html lang="hr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="RecHr">
+      
+      
+        <meta name="author" content="Dejan Ljubobratović">
+      
+      
+      
+        <link rel="prev" href="../../PPZ/09_R_Vizualizacija_podataka/">
+      
+      
+        <link rel="next" href="../../INF_farm/DINP_INF_farm_%2822-23%29/">
+      
+      
+      <link rel="icon" href="../../../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>DINP (2022/2023) - RecHr</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#detaljni-izvedbeni-nastavni-plan-za-kolegij-informatika" class="md-skip">
+          Preskoči na sadržaj
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Zaglavlje">
+    <a href="../../../.." title="RecHr" class="md-header__button md-logo" aria-label="RecHr" data-md-component="logo">
+      
+  <img src="../../../../images/rec-logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RecHr
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DINP (2022/2023)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DejanLjubobratovic/rechr-website/" title="Idi u repozitorij" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Kartice" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Nastava
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../radovi/" class="md-tabs__link">
+          
+  
+    
+  
+  Znanstveni rad
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigacija" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="RecHr" class="md-nav__button md-logo" aria-label="RecHr" data-md-component="logo">
+      
+  <img src="../../../../images/rec-logo.jpg" alt="logo">
+
+    </a>
+    RecHr
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/DejanLjubobratovic/rechr-website/" title="Idi u repozitorij" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Nastava
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Nastava
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Kolegiji
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Kolegiji
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dubinska analiza podataka
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Programiranje za podatkovnu znanost
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Programiranje za podatkovnu znanost
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/00_R_osnove/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0. R osnove
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/01_R_Vektori/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Vektori
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/02_R_Matrice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Matrice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/03_R_Faktori/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Faktori
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/04_R_DataFrame/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Podatkovni okviri (DataFrames)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/05_R_Liste/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Liste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/06_R_Upravljanje_programskim_tijekom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Upravljanje programskim tijekom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/07_R_Funkcije/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Funkcije sustava R
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/08_R_Filtriranje_sort/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Filtriranje, sortiranje i mijenjanje (mutate) podataka
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPZ/09_R_Vizualizacija_podataka/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Vizualizacija podataka
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Informatika (bioteh)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Informatika (bioteh)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DINP (2022/2023)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    DINP (2022/2023)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nositelj-kolegija-i-kontakt-podaci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nositelj kolegija i kontakt podaci
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vrijeme-konzultacija" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vrijeme konzultacija
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#izvoaci-i-nastavna-opterecenja-suradnici-asistenti-tehnicarlaborant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Izvođači i nastavna opterećenja (suradnici, asistenti, tehničar/laborant)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obavezna-literatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obavezna literatura
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preporucena-dodatna-literatura-izborna" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preporučena dodatna literatura (izborna)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opis-predmeta-sazetak-i-ciljevi-kolegija" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opis predmeta (sažetak i ciljevi kolegija)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ishodi-ucenja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ishodi učenja
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detaljni-sadrzaj-kolegija-temenaslovi-predavanja-seminara-i-vjezbi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detaljni sadržaj kolegija (teme/naslovi predavanja, seminara i vježbi)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detaljni sadržaj kolegija (teme/naslovi predavanja, seminara i vježbi)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#predavanja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predavanja
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vjezbe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vježbe
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obveze-nacin-pracenja-i-vrednovanje-studenata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obveze, način praćenja i vrednovanje studenata
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Obveze, način praćenja i vrednovanje studenata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pohaanje-nastave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pohađanje nastave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provjera-znanja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Provjera znanja
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seminarski-rad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seminarski rad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zavrsni-ispit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Završni ispit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ispitni-rokovi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ispitni rokovi
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formiranje-ocjene-prema-pravilniku-o-studijima-sveucilista-u-rijeci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formiranje ocjene (prema Pravilniku o studijima Sveučilišta u Rijeci)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspored-nastave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspored nastave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dodatne-informacije" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dodatne informacije
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#akademska-cestitost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Akademska čestitost
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Informatika (farmacija)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Informatika (farmacija)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INF_farm/DINP_INF_farm_%2822-23%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DINP (2022/2023)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../radovi/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Znanstveni rad
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Znanstveni rad
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../radovi/infcon22/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    INFcon 2022
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nositelj-kolegija-i-kontakt-podaci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nositelj kolegija i kontakt podaci
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vrijeme-konzultacija" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vrijeme konzultacija
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#izvoaci-i-nastavna-opterecenja-suradnici-asistenti-tehnicarlaborant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Izvođači i nastavna opterećenja (suradnici, asistenti, tehničar/laborant)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obavezna-literatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obavezna literatura
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preporucena-dodatna-literatura-izborna" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preporučena dodatna literatura (izborna)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opis-predmeta-sazetak-i-ciljevi-kolegija" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opis predmeta (sažetak i ciljevi kolegija)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ishodi-ucenja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ishodi učenja
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detaljni-sadrzaj-kolegija-temenaslovi-predavanja-seminara-i-vjezbi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detaljni sadržaj kolegija (teme/naslovi predavanja, seminara i vježbi)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detaljni sadržaj kolegija (teme/naslovi predavanja, seminara i vježbi)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#predavanja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predavanja
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vjezbe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vježbe
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obveze-nacin-pracenja-i-vrednovanje-studenata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obveze, način praćenja i vrednovanje studenata
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Obveze, način praćenja i vrednovanje studenata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pohaanje-nastave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pohađanje nastave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provjera-znanja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Provjera znanja
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seminarski-rad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seminarski rad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zavrsni-ispit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Završni ispit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ispitni-rokovi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ispitni rokovi
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formiranje-ocjene-prema-pravilniku-o-studijima-sveucilista-u-rijeci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formiranje ocjene (prema Pravilniku o studijima Sveučilišta u Rijeci)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspored-nastave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspored nastave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dodatne-informacije" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dodatne informacije
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#akademska-cestitost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Akademska čestitost
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="detaljni-izvedbeni-nastavni-plan-za-kolegij-informatika">Detaljni izvedbeni nastavni plan za kolegij: <br />Informatika</h1>
+<p><strong>Akademska godina:</strong> 2022./2023.<br />
+<strong>Studij:</strong> Preddiplomski studij Biotehnologija i istraživanje lijekova<br />
+<strong>Kod kolegija:</strong> BIL103<br />
+<strong>ECTS bodovi:</strong> 3<br />
+<strong>Jezik na kojem se izvodi kolegij:</strong> Hrvatski<br />
+<strong>Nastavno opterećenje kolegija:</strong> 30 sati (10P + 20V)<br />
+<strong>Preduvjeti za upis kolegija:</strong> Nema  </p>
+<h2 id="nositelj-kolegija-i-kontakt-podaci">Nositelj kolegija i kontakt podaci</h2>
+<p><strong>Titula i ime:</strong> Dejan Ljubobratović, pred.<br />
+<strong>Adresa:</strong> <a href="https://www.openstreetmap.org/way/436306129">Ulica Radmile Matejčić 2</a>, soba O-522<br />
+<strong>Telefon:</strong> 051/584-724<br />
+<strong>E-mail:</strong> dejan.ljubobratovic@inf.uniri.hr<br />
+<strong>Web stranica:</strong> <a href="https://portal.uniri.hr/Portfelj/650">portal.uniri.hr</a>  </p>
+<h2 id="vrijeme-konzultacija">Vrijeme konzultacija</h2>
+<p>Nakon nastave ili po dogovoru e-mailom.  </p>
+<h2 id="izvoaci-i-nastavna-opterecenja-suradnici-asistenti-tehnicarlaborant">Izvođači i nastavna opterećenja (suradnici, asistenti, tehničar/laborant)</h2>
+<p>Dejan Ljubobratović, pred. (10P + 20V x 2 grupe)  </p>
+<h2 id="obavezna-literatura">Obavezna literatura</h2>
+<ol>
+<li>Špoljarić, Pavle. Programski alati na Unix računalima (zbornik seminarskih radova), Sveučilište u Splitu, Zagreb, 2006.</li>
+<li>Sadržaji pripremljeni za učenje putem sustava za učenje uz vlastite bilješke i materijale s predavanja i vježbi.</li>
+</ol>
+<h2 id="preporucena-dodatna-literatura-izborna">Preporučena dodatna literatura (izborna)</h2>
+<ol>
+<li>Sterling, T., Anderson, M. &amp; Brodowicz, M. High performance computing: modern systems and practices. (Morgan Kaufmann, an imprint of Elsevier, 2018).</li>
+<li>Eijkhout, V., Chow, E. &amp; van de Geijn, R. Introduction to High Performance Scientific Computing. (Lulu, 2015).</li>
+<li>Cramer, C. J. Essentials of Computational Chemistry: Theories and Models, 2nd Edition. (Wiley, 2004).</li>
+<li>Jensen, F. Introduction to Computational Chemistry, 3rd Edition. (Wiley, 2017).</li>
+<li>Doleželová, M., Muehlfeld, M., Svistunov, M., Wadeley, S., Čapek, T., Hradílek, J., Silas, D., Heves, J., Kovář, P., Ondrejka, P., Bokoč, P., Prpič, M., Slobodová, E., Kopalová, E., Svoboda, M., O'Brien, D., Hideo, M.,  Domingo, D. &amp; Ha, J. System administrator's guide. (Red Hat, 2018).</li>
+<li>Originalni priručnici proizvođača i vodiči za operacijske sustave i programske pakete koji se koriste na vježbama.</li>
+</ol>
+<h2 id="opis-predmeta-sazetak-i-ciljevi-kolegija">Opis predmeta (sažetak i ciljevi kolegija)</h2>
+<p>Kolegij je namijenjen pripremi studenata biotehnologije za obrade podataka iz tog područja. Kao takav, sadržaj kolegija je usmjeren na:</p>
+<ul>
+<li>utvrđivanje, ujednačavanje i nadograđivanje temeljnih informatičkih znanja koje su studenti stekli tijekom srednjoškolskog obrazovanja bez obzira na vrstu obrazovnog profila s ciljem ujednačavanja informatičkog znanja</li>
+<li>usvajanje znanja o temeljnim pojmovima suvremene informacijske tehnologije: principima rada računalnog sustava (sklopovske i programske podrške), računalnih mreža i baza podataka, superračunala i paralelne obrade podataka te licenciranja</li>
+<li>upoznavanje sa naprednim računalnim sustavima za računalnu kemiju, molekularno modeliranje i bioinformatiku koji se koriste u biotehnologiji</li>
+</ul>
+<h2 id="ishodi-ucenja">Ishodi učenja</h2>
+<p>Po završetku kolegija studenti će moći:</p>
+<ol>
+<li>Razlikovati i objasniti temeljne pojmove informacijske i računalne tehnologije</li>
+<li>Definirati i razlikovati elemente umreženog računalnog sustava (računalna sklopovska i programska oprema)</li>
+<li>Objasniti način rada paralelne obrade podataka na superračunalu</li>
+<li>Kategorizirati često korištene licence programske opreme i skupova podataka</li>
+<li>Pretražiti baze podataka koje se koriste u računalnoj kemiji, molekularnom modeliranju i bioinformatici</li>
+<li>Primijeniti osnovne funkcije operacijskog sustava</li>
+<li>Razlikovati numeričko i simboličko računanje te odabrati prikladno za dani problem</li>
+</ol>
+<h2 id="detaljni-sadrzaj-kolegija-temenaslovi-predavanja-seminara-i-vjezbi">Detaljni sadržaj kolegija (teme/naslovi predavanja, seminara i vježbi)</h2>
+<h3 id="predavanja">Predavanja</h3>
+<p>P1. (2 h) Povijesni razvoj računala. Sklopovska i programska oprema<br />
+P2. (2 h) Povijesni razvoj interneta i operacijskih sustava. Znanstvena programska oprema<br />
+P3. (2 h) Superračunala. Trendovi i smjerovi razvoja informacijske i komunikacijske tehnologije<br />
+P4. (2 h) Intelektualno vlasništvo nad programskom opremom i podacima. Licenciranje<br />
+P5. (2 h) Računalna kemija, molekularno modeliranje i bioinformatika</p>
+<h3 id="vjezbe">Vježbe</h3>
+<p>V1. (4 h) Obrada dokumenata koji sadrže kemijske molekularne formule i jednadžbe (<a href="https://code.visualstudio.com/">Visual Studio Code</a>, <a href="https://code.visualstudio.com/learn/collaboration/live-share">Live Share</a>, <a href="https://commonmark.org/help/">Markdown</a>, <a href="https://marp.app/">Marp</a>, <a href="https://www.mathjax.org/">MathJax</a>, <a href="https://katex.org/">KaTeX</a>, <a href="https://ctan.org/pkg/mhchem">mhchem</a>, <a href="https://ctan.org/pkg/chemfig">chemfig</a>, <a href="https://pandoc.org/">Pandoc</a>, <a href="https://www.libreoffice.org/">LibreOffice</a>)<br />
+V2. (4 h) Rad s osnovnim funkcijama i postavljanje operacijskog sustava (<a href="https://docs.microsoft.com/en-us/windows/wsl/install">Windows Subsystem for Linux</a>, <a href="https://ubuntu.com/">Ubuntu</a>, <a href="https://www.debian.org/">Debian</a>, <a href="https://www.freebsd.org/">FreeBSD</a>). Osnove programiranja (<a href="https://www.python.org/">Python</a>, <a href="https://code.visualstudio.com/">Visual Studio Code</a>, <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python extension for Visual Studio Code</a>)<br />
+V3. (4 h) Crtanje strukturnih formula i računanje osnovnih svojstava molekula (<a href="https://www.rdkit.org/">RDKit</a>)<br />
+V4. (4 h) Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici (<a href="https://www.genome.jp/kegg/">KEGG</a>, <a href="https://www.ebi.ac.uk/chembl/">ChEMBL</a>, <a href="https://www.rcsb.org/">RCSB PDB</a>, <a href="https://www.uniprot.org/">UniProt</a>, <a href="https://gpcrdb.org/">GPCRdb</a>, <a href="https://avogadro.cc/">Avogadro</a>, <a href="https://openbabel.org/">Open Babel</a>, <a href="https://pymol.org/">PyMOL</a>, <a href="https://ugene.net/">UGENE</a>)<br />
+V5. (4 h) Simboličko računanje (<a href="https://www.sympy.org/">SymPy</a>). Numeričko računanje (<a href="https://www.numpy.org/">NumPy</a>). Crtanje grafova (<a href="https://matplotlib.org/">Matplotlib</a>). Obrada strukturiranih podataka (<a href="https://pandas.pydata.org/">pandas</a>)</p>
+<h2 id="obveze-nacin-pracenja-i-vrednovanje-studenata">Obveze, način praćenja i vrednovanje studenata</h2>
+<h3 id="pohaanje-nastave">Pohađanje nastave</h3>
+<p>Pohađanje nastave je obavezno i nastavnici vode evidenciju pohađanja za svakoga studenta.</p>
+<p>Predavanja se izvode u bloku od 2 sata prema rasporedu.</p>
+<p>Vježbe se izvode na računalima u bloku od 4 sata prema rasporedu. Na vježbama studenti trebaju usvojiti korištenje računarskih sustava koja se koriste u biotehnologiji.</p>
+<p>Osim prisustvovanja online nastavi na predavanjima i vježbama studenti su dužni koristiti <strong>e-sustav za učenje Merlin</strong> (<a href="https://moodle.srce.hr/2022-2023/">moodle.srce.hr/2022-2023/</a>).</p>
+<h3 id="provjera-znanja">Provjera znanja</h3>
+<p>Provjera znanja uključuje gradivo obrađeno na predavanjima, izvodi se u obliku testa na sustavu za učenje Merlin i nosi do maksimalno 30 ocjenskih bodova.</p>
+<h3 id="seminarski-rad">Seminarski rad</h3>
+<p>Seminarski rad podrazumijeva izradu prezentacije samostalno ili u paru korištenjem markup jezika Markdown na odabranu temu iz područja studija o kojoj će se sadržaji prikupiti pretraživanjem weba i izraditi korištenjem programskih alata za računalnu kemiju, molekularno modeliranje i bioinformatiku obrađenih na vježbama. Bodovat će se kvaliteta, sadržaj i aktualnost obrađene teme. Ova aktivnost nosi do maksimalno 20 ocjenskih bodova.</p>
+<h3 id="zavrsni-ispit">Završni ispit</h3>
+<p>Završni ispit polaže se na računalima i uključuje rješavanje praktičnih zadataka s vježbi. Ispit nosi udio od maksimalno 50 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% točno odgovorenih pitanja i uspješno riješenih zadataka).</p>
+<p>Na prethodno opisani način (provjera znanja, seminarski rad i završni ispit) studenti mogu skupiti 100 ocjenskih bodova.</p>
+<h2 id="ispitni-rokovi">Ispitni rokovi</h2>
+<p>1. ispitni rok održat će se 30. 06. 2023. u O-365 s početkom u 09:00.<br />
+2. ispitni rok održat će se 14. 07. 2023. u O-365 s početkom u 09:00.<br />
+3. ispitni rok održat će se u rujnu prema dogovoru sa studentima.<br />
+4. ispitni rok održat će se u rujnu prema dogovoru sa studentima.</p>
+<h2 id="formiranje-ocjene-prema-pravilniku-o-studijima-sveucilista-u-rijeci">Formiranje ocjene (prema Pravilniku o studijima Sveučilišta u Rijeci)</h2>
+<p>Studenti tijekom kontinuirane nastave mogu steći maksimalno 50% ocjenskih bodova, a na završnom ispitu 50%. Studenti koji su tijekom kontinuiranog dijela nastave ostvarili:</p>
+<ul>
+<li>od 0 do 24,9% ocjenskih bodova ne mogu pristupiti završnom ispitu</li>
+<li>više od 25% ocjenskih bodova mogu pristupiti završnom ispitu.</li>
+</ul>
+<p>Prema postignutom ukupnom broju ocjenskih bodova dodjeljuju se sljedeće konačne ocjene:</p>
+<table>
+<thead>
+<tr>
+<th>Postotak usvojenog znanja i vještina</th>
+<th>ECTS ocjena</th>
+<th>Brojčana ocjena</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>90% do 100%</td>
+<td>A</td>
+<td>Izvrstan (5)</td>
+</tr>
+<tr>
+<td>75% do 89,9%</td>
+<td>B</td>
+<td>Vrlo dobar (4)</td>
+</tr>
+<tr>
+<td>60% do 74,9%</td>
+<td>C</td>
+<td>Dobar (3)</td>
+</tr>
+<tr>
+<td>50% do 59,9%</td>
+<td>D</td>
+<td>Dovoljan (2)</td>
+</tr>
+<tr>
+<td>0% do 49,9%</td>
+<td>F</td>
+<td>Nedovoljan (1)</td>
+</tr>
+</tbody>
+</table>
+<p>Konačna ocjena je zbroj bodova ostvarenih tijekom nastave i bodova ostvarenih na završnom ispitu, a prolazne ocjene su izvrstan (5), vrlo dobar (4), dobar (3) i dovoljan (2).</p>
+<h2 id="raspored-nastave">Raspored nastave</h2>
+<table>
+<thead>
+<tr>
+<th>Datum</th>
+<th>Grupa</th>
+<th>Vrijeme</th>
+<th>Broj sati nastave</th>
+<th>Mjesto</th>
+<th>Oblik nastave</th>
+<th>Izvođač</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>19. 06. 2023. (ponedjeljak)</td>
+<td>svi</td>
+<td>08:30--10:00</td>
+<td>2</td>
+<td>O-S32</td>
+<td>P1</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>19. 06. 2023. (ponedjeljak)</td>
+<td>svi</td>
+<td>10:30--12:00</td>
+<td>2</td>
+<td>O-S32</td>
+<td>P2</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>20. 06. 2023. (utorak)</td>
+<td>svi</td>
+<td>8:30--10:00</td>
+<td>2</td>
+<td>O-S32</td>
+<td>P3</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>20. 06. 2023. (utorak)</td>
+<td>svi</td>
+<td>10:30--12:00</td>
+<td>2</td>
+<td>O-S32</td>
+<td>P4</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>21. 06. 2023. (srijeda)</td>
+<td>svi</td>
+<td>08:30--10:00</td>
+<td>2</td>
+<td>O-S32</td>
+<td>P5</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>23. 06. 2023. (petak)</td>
+<td>1</td>
+<td>08:30--11:30</td>
+<td>4</td>
+<td>O-365</td>
+<td>V1 + Provjera znanja</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>23. 06. 2023. (petak)</td>
+<td>2</td>
+<td>12:00--15:00</td>
+<td>4</td>
+<td>O-365</td>
+<td>V1 + Provjera znanja</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>26. 06. 2023. (ponedjeljak)</td>
+<td>1</td>
+<td>08:30--11:30</td>
+<td>4</td>
+<td>O-365</td>
+<td>V2</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>26. 06. 2023. (ponedjeljak)</td>
+<td>2</td>
+<td>12:00--15:00</td>
+<td>4</td>
+<td>O-365</td>
+<td>V2</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>27. 06. 2023. (utorak)</td>
+<td>1</td>
+<td>08:30--11:30</td>
+<td>4</td>
+<td>O-365</td>
+<td>V3</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>27. 06. 2023. (utorak)</td>
+<td>2</td>
+<td>12:00--15:00</td>
+<td>4</td>
+<td>O-365</td>
+<td>V3</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>28. 06. 2023. (srijeda)</td>
+<td>1</td>
+<td>08:30--11:30</td>
+<td>4</td>
+<td>O-365</td>
+<td>V4</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>28. 06. 2023. (srijeda)</td>
+<td>2</td>
+<td>12:00--15:00</td>
+<td>4</td>
+<td>O-365</td>
+<td>V4</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>29. 06. 2023. (četvrtak)</td>
+<td>1</td>
+<td>08:30--11:30</td>
+<td>4</td>
+<td>O-365</td>
+<td>V5</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>29. 06. 2023. (četvrtak)</td>
+<td>2</td>
+<td>12:00--15:00</td>
+<td>4</td>
+<td>O-365</td>
+<td>V5</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+<tr>
+<td>30. 06. 2023. (petak)</td>
+<td>svi</td>
+<td>09:00--12:00</td>
+<td>1 test</td>
+<td>O-365</td>
+<td>Završni ispit 1. rok</td>
+<td>Dejan Ljubobratović, pred.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dodatne-informacije">Dodatne informacije</h2>
+<p>Izvođač nastave zadržava pravo izmjene rasporeda. Studenti će o eventualnim promjenama biti obaviješteni putem e-sustava za učenje.</p>
+<p>Mole se svi studenti da se odazovu vrednovanju kvalitete nastavnog rada nastavnika i suradnika kako bi se na temelju procjena i sugestija mogla unaprijediti nastava na ovom kolegiju. Vrednovanje nastave putem ISVU sustava provodi se aplikacijom <a href="https://www.isvu.hr/studomat/">Studomat</a> na obrascu definiranom na razini Sveučilišta u Rijeci, a rezultati su anonimni. Više informacija o svim aspektima ovog procesa možete pronaći u <em>Priručniku za kvalitetu studiranja Sveučilišta u Rijeci</em>.</p>
+<h2 id="akademska-cestitost">Akademska čestitost</h2>
+<p>Studenti su dužni poštovati načela akademske čestitosti te se upućuju na dokumente Sveučilišta u Rijeci: <em>Etički kodeks Sveučilišta u Rijeci</em> te <em>Etički kodeks za studente</em>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["header.autohide", "navigation.instant", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Kopirano u me\u0111uspremnik", "clipboard.copy": "Kopiraj u me\u0111uspremnik", "search.result.more.one": "1 rezultat na ovoj stranici", "search.result.more.other": "# rezultat(a) na ovoj stranici", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretra\u017eivanja", "search.result.other": "# rezultat(a) pretra\u017eivanja", "search.result.placeholder": "Unesite pojam pretra\u017eivanja", "search.result.term.missing": "Nedostaje", "select.version": "Odabir verzije"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
